@@ -3,13 +3,5 @@
   "outputDirectory": ".",
   "rewrites": [
     { "source": "/(.*)", "destination": "/api/index.ts" }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0" }
-      ]
-    }
   ]
 }
