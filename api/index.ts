@@ -2,7 +2,8 @@ import { VercelRequest, VercelResponse } from '@vercel/node';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
-export default async function handler(_: VercelRequest, res: VercelResponse) {
+export default async function handler(req: VercelRequest, res: VercelResponse) {
+  console.log('i got here', req.headers.host)
   try {
     // 1. Point to the index.html in your root directory
     const filePath = path.join(process.cwd(), 'index.html');
