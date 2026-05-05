@@ -40,3 +40,4 @@ dist-ssr/
 # Optional: Build output from other tools
 build/
 temp/
+.env*.local
